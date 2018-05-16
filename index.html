@@ -7,7 +7,7 @@
         <meta name="author" content="Lucile DECROZANT-TRIQUENAUX">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>LDTEIRL - Tableau de bord - PGI Régimes & Délices</title>
+        <title>Tableau de bord - PGI Régimes & Délices - LDTEIRL</title>
         <link rel="icon" type="image/png" href="image/favicon.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,6 +20,189 @@
     </head>
 
     <body>
-
+        <div id="principal-contenu" class="container pt-2 pb-5 mb-5 pl-5 pr-5">
+            <div class="row mt-5">
+                <div class="col">
+                    <h1 class="display-4">Régimes & Délices - PGI</h1>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <a href="document/cahier-des-charges.pdf" download="cahier-des-charges.pdf" data-toggle="tooltip" title="Télécharger le document" class="vignettes-top">
+                        <img src="image/icone-pdf.png" alt="PDF" class="mr-2">
+                        <span>Cahier des charges</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="document/devis.pdf" download="devis.pdf" data-toggle="tooltip" title="Télécharger le document" class="vignettes-top">
+                        <img src="image/icone-pdf.png" alt="PDF" class="mr-2">
+                        <span>Devis final</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div id="jalon-en-cours" class="card border-primary bg-light">
+                        <h4 class="card-header">
+                            Jalon de projet en cours
+                        </h4>
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3 ml-0 pl-0">
+                                        <div class="card">
+                                            <h4 class="text-primary m-0 p-4">
+                                                Connexion au Progiciel de Gestion Intégrée
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="card text-center p-1">
+                                                    Date de sortie prévue<br>
+                                                    - -
+                                                </div>
+                                            </div>
+                                            <div class="col mr-0 pr-0">
+                                                <div class="card text-center p-1">
+                                                    Date de rendez-vous démonstration<br>
+                                                    - -
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col">
+                                                <h4>Fonctionnalités</h4>
+                                                <ul class="font-weight-light">
+                                                    <li>
+                                                        <a data-toggle="tooltip" title="Accéder à l'issue GitHub correpondant à la fonctionnalité" target="_blank" href="https://github.com/LUCILE-DECROZANT-TRIQUENAUX-EIRL/pgi-regimes-et-delices/issues/1">
+                                                            Connexion au logiciel
+                                                        </a>
+                                                    </li>
+                                                <ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="maquettes-jalon-en-cours" class="row mt-5">
+                                    <div class="card ml-auto mr-5" data-toggle="modal" data-target="#maquette1">
+                                        <div class="zoom" title="Il n'y a pas encore de maquette pour ce jalon" data-toggle="tooltip">
+                                            <img class="card-img-top" src="image/maquette-vide-sm.png" alt="Maquette">
+                                        </div>
+                                    </div>
+                                    <div class="card ml-1 mr-5" data-toggle="modal" data-target="#maquette2">
+                                        <div class="zoom" title="Il n'y a pas encore de maquette pour ce jalon" data-toggle="tooltip">
+                                            <img class="card-img-top" src="image/maquette-vide-sm.png" alt="Maquette">
+                                        </div>
+                                    </div>
+                                    <div class="card ml-1 mr-auto" data-toggle="modal" data-target="#maquette3">
+                                        <div class="zoom" title="Il n'y a pas encore de maquette pour ce jalon" data-toggle="tooltip">
+                                            <img class="card-img-top" src="image/maquette-vide-sm.png" alt="Maquette">
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="maquette1">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <img src="image/maquette-vide.png" alt="Maquette" class="img-fluid mx-auto d-block">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal fade" id="maquette2">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <img src="image/maquette-vide.png" alt="Maquette" class="img-fluid mx-auto d-block">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal fade" id="maquette3">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <img src="image/maquette-vide.png" alt="Maquette" class="img-fluid mx-auto d-block">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <h2>Précédents jalons</h2>
+                    <p class="font-italic">
+                        Il n'y a pas encore de précédent jalon.
+                    </p>
+                    <!--
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Collapsible Group Item #1
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Collapsible Group Item #2
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Collapsible Group Item #3
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+        <nav id="bottomNavbar" class="navbar navbar-expand-lg navbar-light bg-light text-center fixed-bottom">
+            <div>
+                <ul class="navbar-nav mr-auto text-center">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="https://github.com/LUCILE-DECROZANT-TRIQUENAUX-EIRL/website-pgi-regimes-et-delices">Code source</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="mailto:lucile.decrozant.triquenaux@protonmail.com?subject=Contact%20à%20propos%20du%20tableau%20de%20bord%20du%20PGI%20Régimes%20&%20Délices">Copyright 2018 Lucile Decrozant-Triquenaux</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="https://www.gnu.org/licenses/agpl-3.0">Site sous licence AGPL v3</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </body>
 </html>
