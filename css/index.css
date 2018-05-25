@@ -92,14 +92,16 @@ h4 {
     font-size: 22px;
 }
 
-#maquettes-jalon-en-cours > .card {
+#maquettes-jalon-en-cours > .card,
+.maquettes-jalon-passé > .card {
     height: 102px;
     width: 102px;
     background-color: #F0F0F0;
     color: #F0F0F0;
 }
 
-#maquettes-jalon-en-cours > .card > img {
+#maquettes-jalon-en-cours > .card > img,
+.maquettes-jalon-passé > .card > img {
     width: 100px;
     height: 100px;
 }
